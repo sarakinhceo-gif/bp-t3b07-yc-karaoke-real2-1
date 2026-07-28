@@ -1,489 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <meta name="description" content="염창 가라오케 찐후기 상세 정보! 위치, 가격, 시스템, 시설 등 방문 전 꼭 알아야 할 모든 것. 염창동 가라오케 완벽 가이드.">
-    <meta name="keywords" content="염창 가라오케 정보, 염창 가라오케 위치, 염창 가라오케 가격, 염창동 가라오케 시스템, 가라오케 시설, 염창 가라오케 찐후기">
-    <meta name="author" content="염창 가라오케 찐후기">
-    <link rel="canonical" href="https://yeomchang-room-trend.mapo-room-guide.xyz/about.html">
-    <meta property="og:title" content="염창 가라오케 찐후기 | 상세 정보 가이드">
-    <meta property="og:description" content="염창 가라오케 찐후기 상세 정보! 위치, 가격, 시스템 등 방문 전 필수 체크리스트.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yeomchang-room-trend.mapo-room-guide.xyz/about.html">
-    <title>염창 가라오케 찐후기 | 상세 정보</title>
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #0a0a0a;
-            color: #e5e5e5;
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #f0d68a;
-        }
-        ul {
-            list-style: none;
-        }
-
-        /* Layout */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-weight: 400;
-            letter-spacing: -0.02em;
-        }
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-        h2 {
-            font-size: 2rem;
-            line-height: 1.3;
-            margin-bottom: 1.2rem;
-            border-left: 4px solid #d4af37;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            line-height: 1.4;
-            margin-bottom: 0.8rem;
-        }
-        p {
-            font-size: 1.05rem;
-            margin-bottom: 1.2rem;
-            color: #b0b0b0;
-        }
-        .dropcap::first-letter {
-            font-size: 3.5rem;
-            float: left;
-            line-height: 1;
-            margin-right: 0.5rem;
-            color: #d4af37;
-            font-weight: 700;
-        }
-        .fine-border {
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            padding-bottom: 0.5rem;
-        }
-
-        /* Header & Navigation */
-        header {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            position: sticky;
-            top: 0;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #d4af37;
-            letter-spacing: 0.05em;
-        }
-        .logo span {
-            color: #e5e5e5;
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav a {
-            font-size: 0.95rem;
-            color: #b0b0b0;
-            transition: color 0.3s;
-            position: relative;
-        }
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: #d4af37;
-            transition: width 0.3s;
-        }
-        nav a:hover::after {
-            width: 100%;
-        }
-        nav a:hover {
-            color: #d4af37;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 5px;
-        }
-        .hamburger-menu span {
-            width: 28px;
-            height: 2px;
-            background: #d4af37;
-            transition: all 0.3s;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #d4af37;
-            color: #0a0a0a;
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .tel-link:hover {
-            background: #f0d68a;
-            color: #0a0a0a;
-            transform: scale(1.02);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 5rem 0 3rem;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: #999;
-        }
-        .hero .badge {
-            display: inline-block;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 0.4rem 1.2rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            color: #d4af37;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Info Grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            margin: 3rem 0;
-        }
-        .info-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.3s;
-        }
-        .info-card:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            background: rgba(212, 175, 55, 0.05);
-            transform: translateY(-2px);
-        }
-        .info-card .icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .info-card h3 {
-            color: #d4af37;
-            margin-bottom: 0.8rem;
-        }
-        .info-card p {
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-        .info-card .label {
-            color: #888;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Detail Section */
-        .detail-section {
-            padding: 3rem 0;
-        }
-        .detail-block {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-bottom: 4rem;
-        }
-        .detail-block.reverse {
-            direction: rtl;
-        }
-        .detail-block.reverse > * {
-            direction: ltr;
-        }
-        .detail-image {
-            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-            border-radius: 16px;
-            min-height: 350px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            position: relative;
-            overflow: hidden;
-        }
-        .detail-image::before {
-            content: '📸';
-            font-size: 4rem;
-            opacity: 0.3;
-        }
-        .detail-image .placeholder-text {
-            color: #555;
-            font-size: 1rem;
-            position: absolute;
-            bottom: 1.5rem;
-        }
-        .detail-content h2 {
-            border-left-color: #d4af37;
-        }
-        .detail-content p {
-            font-size: 1.05rem;
-        }
-        .detail-content ul {
-            margin-top: 1rem;
-        }
-        .detail-content ul li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            color: #b0b0b0;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-        .detail-content ul li::before {
-            content: '✦';
-            color: #d4af37;
-            font-size: 0.8rem;
-        }
-
-        /* FAQ */
-        .faq-section {
-            padding: 4rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .faq-item {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 1.5rem 0;
-        }
-        .faq-item h3 {
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #e5e5e5;
-            font-weight: 500;
-        }
-        .faq-item h3::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: #d4af37;
-            transition: transform 0.3s;
-        }
-        .faq-item h3.active::after {
-            transform: rotate(45deg);
-        }
-        .faq-item p {
-            margin-top: 1rem;
-            font-size: 0.95rem;
-            display: none;
-        }
-        .faq-item p.show {
-            display: block;
-        }
-
-        /* CTA */
-        .cta-section {
-            text-align: center;
-            padding: 4rem 0;
-            background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.03));
-            border-radius: 16px;
-            margin: 2rem 0;
-        }
-        .cta-section h2 {
-            border-left: none;
-            text-align: center;
-        }
-        .cta-section p {
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        /* Footer */
-        footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 3rem 0;
-            margin-top: 4rem;
-            text-align: center;
-        }
-        footer p {
-            font-size: 0.85rem;
-            color: #666;
-        }
-        footer .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        footer .footer-links a {
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-            nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: rgba(10, 10, 10, 0.98);
-                padding: 2rem;
-                gap: 1.5rem;
-                border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            }
-            nav.active {
-                display: flex;
-            }
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-            .detail-block {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            .detail-block.reverse {
-                direction: ltr;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>염창 가라오케 정보</title>
+  <meta name="description" content="염창 가라오케를 처음 찾는 방문자를 위해 예약 여부, 인원 규모, 이용 목적에 따라 선택 기준과 확인 사항을 단계별로 안내합니다.">
+  <meta name="keywords" content="염창 가라오케, 찐후기, 이용 가이드, 예약, 인원 규모, 노래방 이용 팁">
+  <link rel="canonical" href="https://yeomchang-room-trend.mapo-room-guide.xyz/about.html">
+  <meta property="og:title" content="염창 가라오케 찐후기 — 초보자를 위한 조건별 이용 가이드">
+  <meta property="og:description" content="염창 가라오케를 처음 찾는 방문자를 위해 예약 여부, 인원 규모, 이용 목적에 따라 선택 기준과 확인 사항을 단계별로 안내합니다.">
+  <meta property="og:url" content="https://yeomchang-room-trend.mapo-room-guide.xyz/about.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="염창 가라오케 정보">
+  <meta name="twitter:description" content="염창 가라오케를 처음 찾는 사람들을 위한 상세 정보와 체크리스트">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="logo">염창<span>가라오케</span> 찐후기</div>
-            <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('nav').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/info">정보</a>
-                <a href="/review">리뷰</a>
-                <a href="/faq">FAQ</a>
-                <a href="tel:02-1234-5678" class="tel-link">📞 전화문의</a>
-            </nav>
-        </div>
-    </header>
+  <header class="q-hero-6jct">
+    <h1>염창 가라오케 정보</h1>
+  </header>
+  <nav class="k-card-rgod">
+    <ul>
+      <li><a href="/intro.html">소개</a></li>
+      <li><a href="/info.html">정보</a></li>
+      <li><a href="/review.html">리뷰</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">연락처</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+  <main>
+    <section class="r-txt-zfwq">
+      <h2>염창 가라오케의 기본 개요</h2>
+      <p>염창은 지하철 6호선과 2호선이 교차하는 편리한 입지 덕분에 친구·가족·동료와 함께 찾기 좋은 가라오케 지역입니다. 다양한 연령층이 즐길 수 있는 방음 시설과 넓은 실내 공간을 갖춘 곳이 많아 초보자는 물론 노래 실력을 뽐내고 싶은 사람들에게도 매력적인 선택이 됩니다.</p>
+      <p>주변에 카페·맛집·주차 시설이 밀집해 있어 노래를 부른 뒤 가볍게 식사를 하거나 차를 대고 떠날 수 있습니다. 또한, 야간 영업을 하는 곳이 많아 늦은 시간에도 이용이 가능하니 일정에 구애받지 않고 계획을 세울 수 있습니다.</p>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <span class="badge">🔍 염창 가라오케 찐후기 정보</span>
-                <h1>염창 가라오케,<br>이것만 알면 완벽 준비 끝</h1>
-                <p class="dropcap">처음 가는 곳이면 괜히 떨리잖아? 가격은 얼마고, 시스템은 어떤지, 주차는 되는지… 내가 직접 발로 뛰면서 알게 된 정보들만 쫙 모아봤어. 이거 보면 염창 가라오케 완전 정복 가능!</p>
-            </div>
-        </section>
+    <section class="r-txt-zfwq">
+      <h2>예약 여부와 방 선택 기준</h2>
+      <p>염창 가라오케는 대체로 사전 예약을 권장합니다. 특히 주말·공휴일·저녁 시간대는 손님이 몰리기 때문에, 원하는 방 규모와 이용 시간을 확보하려면 미리 예약이 필수입니다. 예약은 전화, 카카오톡 채팅, 혹은 각 가라오케 공식 홈페이지를 통해 손쉽게 진행할 수 있습니다.</p>
+      <p>방을 선택할 때는 인원 규모와 이용 목적에 따라 구분합니다. 4~6인용 소규모 방은 친목 모임이나 연습용으로 적합하고, 8~12인용 대형 방은 파티·생일 행사에 알맞습니다. 또한, 가라오케마다 테마 방(레트로, 최신 팝, 노래 연습실 등)을 제공하니 사전 확인 후 예약하면 더욱 즐거운 경험을 만들 수 있습니다.</p>
+    </section>
 
-        <section class="container">
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="icon">📍</div>
-                    <span class="label">위치</span>
-                    <h3>염창동 중심가</h3>
-                    <p>서울 강서구 염창동 264-xx</p>
-                    <p>지하철 9호선 염창역 3번 출구에서 도보 5분</p>
-                    <p>버스 정류장 '염창동주민센터' 하차</p>
-                </div>
-                <div class="info-card">
-                    <div class="icon">💰</div>
-                    <span class="label">가격</span>
-                    <h3>합리적인 룸 요금</h3>
-                    <p>2시간 기준: 소형 5만원 / 중형 8만원 / 대형 12만원</p>
-                    <p>주말 및 공휴일: +1만원</p>
-                    <p>음료 및 안주 별도 (맥주 5,000원~, 안주 8,000원~)</p>
-                </div>
-                <div class="info-card">
-                    <div class="icon">🕐</div>
-                    <span class="label">운영 시간</span>
-                    <h3>매일 18:00 ~ 익일 05:00</h3>
-                    <p>일요일: 18:00 ~ 24:00</p>
-                    <p>연중무휴 (명절 제외)</p>
-                    <p>마지막 입장: 새벽 3시 30분</p>
-                </div>
-                <div class="info-card">
-                    <div class="icon">🅿️</div>
-                    <span class="label">주차</span>
-                    <h3>전용 주차장 완비</h3>
-                    <p>건물 지하 1층, 2층 주차 가능 (30대)</p>
-                    <p>발렛파킹 서비스 무료</p>
-                    <p>주차 공간이 협소하니 대중교통 추천!</p>
-                </div>
-                <div class="info-card">
-                    <div class="icon">🎤</div>
-                    <span class="label">시스템</span>
-                    <h3>최신식 노래방 시스템</h3>
-                    <p
+    <section class="r-txt-zfwq">
+      <h2>이용 목적별 체크리스트</h2>
+      <p><strong>친구와의 가벼운 모임</strong>이라면 방음 수준이 좋은 중간 규모 방을 선택하고, 음료 주문 시 무료 리필 정책을 확인하세요. 음료가 별도 과금되는 경우가 있으니 미리 문의하면 예상 비용을 정확히 파악할 수 있습니다.</p>
+      <p><strong>노래 연습·연주 준비</strong>가 목적이라면 마이크와 사운드 장비가 최신인지, 곡 검색이 원활한지 확인합니다. 일부 가라오케는 전용 마이크 스탠드와 조명 제어 기능을 제공해 연습 효율을 높여줍니다.</p>
+      <p><strong>생일·기념일 파티</strong>를 계획 중이라면 파티 패키지(음식·케이크·장식 포함) 제공 여부와 추가 비용을 미리 체크하고, 사전 주문이 가능한지 확인합니다. 또한, 방 내부에 사진 촬영용 배경이 마련돼 있는 경우가 많아 추억을 남기기에 좋습니다.</p>
+    </section>
+
+    <section class="r-txt-zfwq">
+      <h2>방문 전 꼭 확인해야 할 사항</h2>
+      <p>가라오케마다 영업 시간이 다소 차이가 있습니다. 평일 10시~24시, 주말 09시~02시로 운영되는 곳이 많지만, 일부는 새벽 4시까지 열려 있어 야간 이용이 가능하니 운영시간을 반드시 확인하세요.</p>
+      <p>주차 시설은 거리별로 차이가 있으니, 차로 방문할 경우 가라오케 주변 공용주차장 위치를 지도에서 확인하고, 주차 요금이 무료인지 유료인지를 사전에 파악하면 편리합니다.</p>
+    </section>
+
+    <section class="r-txt-zfwq">
+      <h2>자주 묻는 질문(FAQ)</h2>
+      <p><strong>Q: 최소 이용 시간은 어떻게 되나요?</strong><br>
+      A: 대부분의 가라오케는 30분 단위로 이용 시간이 설정돼 있습니다. 최소 1시간 예약이 필요할 경우가 많으며, 추가 시간은 30분당 요금이 부과됩니다.</p>
+
+      <p><strong>Q: 노래 선택이 제한되나요?</strong><br>
+      A: 최신 곡까지 포함한 방대한 곡 데이터를 보유하고 있는 가라오케가 대부분이며, 원하는 곡이 없을 경우 직원에게 요청하면 가능한 경우 직접 추가해 주는 경우도 있습니다.</p>
+
+      <p><strong>Q: 음료·음식 주문은 어떻게 하나요?</strong><br>
+      A: 방 안에 설치된 터치패널 혹은 직원 호출 버튼을 통해 주문이 가능합니다. 주문 후 5~10분 내에 제공되며, 일부 방은 셀프 바를 운영해 자유롭게 이용할 수 있습니다.</p>
+    </section>
+  </main>
+  <footer class="ruled double-r">
+    <p>© 2026 Yeomchang Karaoke Guide. All rights reserved.</p>
+  </footer>
 </body>
 </html>
